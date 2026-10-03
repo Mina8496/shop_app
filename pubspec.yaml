@@ -38,6 +38,9 @@ dependencies:
   equatable: ^3.0.0
   flutter_bloc: ^9.1.1
   smooth_page_indicator: ^3.0.0
+  bloc: ^9.2.1
+  shared_preferences: ^2.5.5
+  dio: ^5.11.1
 
 dev_dependencies:
   flutter_test:

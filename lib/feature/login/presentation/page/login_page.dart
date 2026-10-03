@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/core/routes/app_navigator.dart';
 import 'package:shop_app/core/utils/color_palette.dart';
 import 'package:shop_app/core/utils/styles.dart';
 import 'package:shop_app/core/widgets/custom_button.dart';
 import 'package:shop_app/core/widgets/app_snackbar.dart';
 import 'package:shop_app/core/widgets/custom_text_field.dart';
+import 'package:shop_app/feature/register/presentation/page/register_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -50,14 +52,17 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Login', style: Styles.styleSemibold18),
+              SizedBox(height: 60),
+              Text('Login', style: Styles.stylebold26),
+              SizedBox(height: 15),
+
               Text(
                 'Login now to browse our hot offers',
                 style: Styles.styleBold16.copyWith(
                   color: ColorPalette.kPrimaryGray,
                 ),
               ),
-              SizedBox(height: 15),
+              SizedBox(height: 30),
               CustomTextField(
                 controller: emailController,
                 keyboardType: TextInputType.emailAddress,
@@ -74,7 +79,7 @@ class _LoginPageState extends State<LoginPage> {
                   return null;
                 },
               ),
-              SizedBox(height: 15),
+              SizedBox(height: 20),
               CustomTextField(
                 controller: passwordController,
                 keyboardType: TextInputType.visiblePassword,
@@ -95,17 +100,20 @@ class _LoginPageState extends State<LoginPage> {
                   return null;
                 },
               ),
-              SizedBox(height: 24),
+              SizedBox(height: 40),
               CustomButton(
                 text: 'Login',
                 isLoading: _isLoading,
                 onPressed: _login,
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 18),
               Row(
                 children: [
                   Text("Don't have an account?"),
-                  CustomTextButton(text: "Register", onPressed: () {}),
+                  CustomTextButton(
+                    text: "Register",
+                    onPressed: () => AppNavigator.push(context, RegisterPage()),
+                  ),
                 ],
               ),
             ],
