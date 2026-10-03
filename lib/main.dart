@@ -12,6 +12,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(theme: lightTheme, home: const OnBoardingPage());
+    return MaterialApp(theme: lightTheme, home: OnBoardingPage());
   }
 }
