@@ -13,17 +13,17 @@ class BoardingItem {
 const boardingItems = [
   BoardingItem(
     image: 'assets/images/onBoarding.png',
-    title: 'Title 1',
-    body: 'Body 1',
+    title: 'on Boarding title 1',
+    body: 'on Boarding 1 body',
   ),
   BoardingItem(
     image: 'assets/images/onBoarding.png',
-    title: 'Title 2',
-    body: 'Body 2',
+    title: 'on Boarding title 2',
+    body: 'on Boarding 2 body',
   ),
   BoardingItem(
     image: 'assets/images/onBoarding.png',
-    title: 'Title 3',
-    body: 'Body 3',
+    title: 'on Boarding title 3',
+    body: 'on Boarding 3 body',
   ),
 ];
