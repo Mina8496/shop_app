@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shop_app/core/routes/app_navigator.dart';
 import 'package:shop_app/core/utils/color_palette.dart';
 import 'package:shop_app/core/utils/styles.dart';
+import 'package:shop_app/core/widgets/custom_button.dart';
 import 'package:shop_app/feature/login/presentation/page/login_page.dart';
 import 'package:shop_app/feature/on_boarding/data/boarding_items.dart';
 import 'package:shop_app/feature/on_boarding/presentation/page/widget/build_boarding_item.dart';
@@ -31,14 +32,11 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          TextButton(
-            onPressed: () {
-              AppNavigator.pushAndRemoveUntil(context, LoginPage());
-            },
-            child: Text(
-              'SKIP',
-              style: Styles.styleBold16.copyWith(color: Colors.deepOrange),
-            ),
+          CustomTextButton(
+            text: 'SKIP',
+            style: Styles.styleBold16.copyWith(color: Colors.deepOrange),
+            onPressed: () =>
+                AppNavigator.pushAndRemoveUntil(context, LoginPage()),
           ),
         ],
       ),
@@ -64,7 +62,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                   count: boardingItems.length,
                   effect: ExpandingDotsEffect(
                     dotColor: ColorPalette.kPrimaryGray,
-                    activeDotColor: ColorPalette.kLightRed,
+                    activeDotColor: ColorPalette.kPrimaryBlue,
                     dotHeight: 10,
                     dotWidth: 10,
                     expansionFactor: 4,
