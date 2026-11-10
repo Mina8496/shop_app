@@ -41,6 +41,9 @@ dependencies:
   bloc: ^9.2.1
   shared_preferences: ^2.5.5
   dio: ^5.11.1
+  conditional_builder_null_safety: ^0.0.6
+  dartz: ^0.10.1
+  get_it: ^9.3.0
 
 dev_dependencies:
   flutter_test:
