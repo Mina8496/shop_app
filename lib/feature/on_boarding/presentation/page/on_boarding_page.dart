@@ -3,7 +3,7 @@ import 'package:shop_app/core/routes/app_navigator.dart';
 import 'package:shop_app/core/utils/color_palette.dart';
 import 'package:shop_app/core/utils/styles.dart';
 import 'package:shop_app/core/widgets/custom_button.dart';
-import 'package:shop_app/feature/login/presentation/page/login_page.dart';
+import 'package:shop_app/feature/auth/login/presentation/page/login_page.dart';
 import 'package:shop_app/feature/on_boarding/data/boarding_items.dart';
 import 'package:shop_app/feature/on_boarding/presentation/page/widget/build_boarding_item.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';

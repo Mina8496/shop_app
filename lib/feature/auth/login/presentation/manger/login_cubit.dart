@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shop_app/feature/login/data/repos/login_repo.dart';
+import 'package:shop_app/feature/auth/login/data/repos/login_repo.dart';
 import 'login_state.dart';
 
 class LoginCubit extends Cubit<LoginStates> {

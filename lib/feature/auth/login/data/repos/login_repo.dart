@@ -2,7 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:shop_app/core/errors/failure.dart';
 import 'package:shop_app/core/network/api_service.dart';
-import 'package:shop_app/feature/login/data/models/login_model.dart';
+import 'package:shop_app/feature/auth/login/data/models/login_model.dart';
 
 class LoginRepo {
   final ApiService _api;

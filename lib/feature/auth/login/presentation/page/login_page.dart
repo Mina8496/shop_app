@@ -7,10 +7,10 @@ import 'package:shop_app/core/utils/styles.dart';
 import 'package:shop_app/core/widgets/app_snackbar.dart';
 import 'package:shop_app/core/widgets/custom_button.dart';
 import 'package:shop_app/core/widgets/custom_text_form_field.dart';
-import 'package:shop_app/feature/login/presentation/manger/login_cubit.dart';
-import 'package:shop_app/feature/login/presentation/manger/login_state.dart';
+import 'package:shop_app/feature/auth/login/presentation/manger/login_cubit.dart';
+import 'package:shop_app/feature/auth/login/presentation/manger/login_state.dart';
 import 'package:shop_app/feature/on_boarding/presentation/page/on_boarding_page.dart';
-import 'package:shop_app/feature/register/presentation/page/register_page.dart';
+import 'package:shop_app/feature/auth/register/presentation/page/register_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

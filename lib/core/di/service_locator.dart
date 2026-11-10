@@ -2,8 +2,8 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get_it/get_it.dart';
 import 'package:shop_app/core/network/api_service.dart';
-import 'package:shop_app/feature/login/data/repos/login_repo.dart';
-import 'package:shop_app/feature/login/presentation/manger/login_cubit.dart';
+import 'package:shop_app/feature/auth/login/data/repos/login_repo.dart';
+import 'package:shop_app/feature/auth/login/presentation/manger/login_cubit.dart';
 
 final getIt = GetIt.instance;
 
